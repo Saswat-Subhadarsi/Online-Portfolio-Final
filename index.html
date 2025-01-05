@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--Navigation menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration = "1100">
+                <span>Saswat Subhadarsi Pattnaik</span>
+            </div>
+            <div class="links">
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="100"><a href="#about-section">Home</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="300"><a href="./Resume.pdf" download="Resume.pdf">Resume</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="400"><a href="#skills">Skills</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="500"><a href="#projects-section">Projects</a></div>
+                <div class="links" data-aos="fade-up" data-aos-duration = "1100" data-aos-delay="600"><a href="#">Experience</a></div>
+                <div class="links" data-aos="fadeup" data-aos-duration = "1100" data-aos-delay="700"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about-section">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()">
+                </i>
+            </div>
+         </div>
+    </nav>
+
+    <section id="about-section">
+        <h2 data-aos="zoom-in" data-aos-duration="1100">Hey World, I'm Saswat!</h2>
+        <div class="headshot" data-aos="zoom-in" data-aos-duration="1100">
+            <img src="Pfp.jpeg" alt="headshot">
+        </div>
+        <div class="content" data-aos="fade-in" data-aos-duration="1100">
+            <div class="typewriter">I'm a <span class="typewriter-text"></span><label for = "">|</label></div>
+            <script src="script.js"></script>
+        </div>
+        <div class="social-links" data-aos="zoom-in" data-aos-duration="1100">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="btn" data-aos="zoom-in" data-aos-duration="1100">
+            <button>Hire Me</button>
+        </div>
+    </section>
+
+
+    <!--About me section-->
+    <section class="about" id="about" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+        <div class="content">
+            <div class="title"><span>About me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="Pfp.jpeg" alt="profile pic"/>
+                </div>
+                <div class="right">
+                    <p class="about-text">I am <span>Saswat</span> and I am a <span>Machine Learning engineer</span> and a <span>Web Developer</span>. I’m really into AI, machine learning, and web development. Over the past year, I’ve worked on some cool projects, like a gamified ML app that blends storytelling with interactive learning. I’ve got hands-on experience with TensorFlow, JavaScript, and front-end stuff, and I’m currently learning Node.js, Express, MongoDB, and React for an upcoming hackathon. I enjoy building things that make learning fun and love experimenting with tech to see what’s possible.</p>
+                    <div class="exp-area">
+                        <br>
+                        <p class="exp">
+                            Experience:
+                            <span>2 Years</span>
+                        </p>
+                        <br>
+                        <p class="exp">
+                            Speciality:
+                            <span> ML Engineering & AI Development</span>
+                        </p>
+                        <br>
+                        <p class="exp">
+                            Address:
+                            <span> Odisha, India</span>
+                        </p>
+                        <br>
+                        <p class="exp">
+                            Email:
+                            <span>saswatpattaniksubhadarsi@gmail.com</span>
+                        </p>
+                        <br>
+                        <p class="exp">
+                            Freelance:
+                            <span>Available</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skills-details" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                <div class="text">
+                    <h3>Machine Learning & AI Skills</h3>
+                        <p>Model Development:Logistic Regression, Recommender Systems, Supervised & Unsupervised Learning</p>
+                        <p>Deep Learning Frameworks: TensorFlow, Transformers (BERT, CodeT5)</p>
+                        <p>NLP: Sentiment Analysis, Question Answering, Language Model Fine-Tuning</p>
+                        <p>Reinforcement Learning: RL models & OpenAI Gym</p>
+                        <p>Data Preprocessing: Real-world data integration, feature engineering</p>
+                    <h3>Web Development Skills</h3>
+                        <p>Frontend: HTML, CSS, JavaScript (ES6+), DOM Manipulation</p>
+                        <p>Backend: Node.js (in progress), Express.js (in progress)</p>
+                        <p>Database: MongoDB (in progress)</p>
+                    <h3>Programming Languages</h3>
+                        <p>Python: For ML/AI projects, data analysis, GUI, Tkinter, Web Scraping</p>
+                        <p>JavaScript: For web development and dynamic applications</p>
+                        <p>C, C++</p>
+                    <h3>Tools & Platforms</h3>
+                        <p>TensorFlow, Jupyter Notebook, Google Colab</p>
+                        <p>Figma-to-Flutter conversion</p>
+                        <p>Version Control: Git</p>
+                    <h3>Soft Skills</h3>
+                        <p>Teaching & Mentorship: Machine Learning Teaching Assistant</p>
+                        <p>Problem-Solving: Gamified learning design and real-world data integration</p>
+                        <div class="experience">
+                            <div class="num">2</div>
+                            <div class="exp">
+                                Years Of<br>
+                                Experience
+                            </div>
+                        </div>
+                    <div class="skills-icons">
+                        <a href="#"><i class="fa-brands fa-python"></i></a>
+                        <a href="#"><i class="fa-solid fa-brain"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                        <a href="#"><i class="fa-solid fa-fire"></i></a>
+                        <a href="#"><i class="fa-solid fa-database"></i></a>
+                    </div>
+                </div>
+            <div class="boxes" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                <div class="box">
+                    <div class="topic">Machine Learning</div>
+                    <div class="per">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Artificial Intelligence</div>
+                    <div class="per">75%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Python</div>
+                    <div class="per">85%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">Web Development</div>                        <div class="per">65%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div class="project-subsection">
+            <h3>Machine Learning & Artificial Intelligence</h3>
+            <div class="projects-scroll-container">
+                <a href="#" target="_blank" class="project-box" data-aos="fade-in" data-aos-duration="1100" data-aos-delay="200">
+                    <img src="mlproject1.png" alt="Attention is all you need">
+                    <h4>Attention Is All You Need</h4>
+                    <h5>Python and Pytorch</h5>
+                    <p> Attention Is All You Need is a groundbreaking paper that introduced the Transformer model, which relies solely on self-attention mechanisms rather than recurrent or convolutional layers. This innovation enables more parallelization during training and significantly improves performance in tasks like machine translation, leading to the development of powerful models such as BERT and GPT.
+                        Here I replicate the results.
+                    </p>
+                </a>
+                <a href="#" target="_blank" class="project-box" data-aos="fade-in" data-aos-duration="1100" data-aos-delay="400">
+                    <img src="senti.jpg" alt="Sentiment Analysis">
+                    <h4>Custom Sentiment Analysis Model</h4>
+                    <h5>Python Tensorflow Transformers</h5>
+                    <p>The Sentiment Analysis project involves building a model to classify text data (such as social media posts or reviews) as positive, negative, or neutral. By leveraging natural language processing (NLP) techniques, it analyzes the sentiment conveyed in user-generated content, providing valuable insights for businesses, marketers, or social media analysts.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="content" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+            <div class="title"><span>Contact</span></div>
+            <div class="text">
+                <div class="topic">Have Any Projects? Contact Me</div>
+            </div>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="messgae" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Saswat Subhadarsi Pattnaik | All Rights Reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script >
+        function hamburg(){
+           const navbar = document.querySelector(".dropdown")
+           navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+           const navbar = document.querySelector(".dropdown")
+           navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+    </html>
+</body>
+</html>
